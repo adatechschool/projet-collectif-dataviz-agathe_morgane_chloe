@@ -1,4 +1,4 @@
-//limiter la requête à 5 meilleures réponses
+//to do : limiter la requête à 5 meilleures réponses
 
 fetch('https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/#get-/api/v2/search?brands_tag=milka&categories_tags=chocolates&sort_by=nutriscore_score').then(function (response) {
 	// The API call was successful!
