@@ -10,3 +10,5 @@ fetch('https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/#get-/api
 	// There was an error
 	console.warn('Something went wrong.', err);
 });
+
+// to do : gérer une image par défaut grâce à ??
