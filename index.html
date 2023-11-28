@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du chocolat, mais healthy !</title>
-    <script src="main.js" defer></script>
-    <script src="select.js" defer></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Du chocolat mais healthy</h1>
 
-<!--select à remplacer par un appel dynamique de marque via l'API ?-->
-<label for="brand-select">Choisir une marque :</label>
-<select name="brand" id="brand-select">
-    <option value = "Côte d'or">Côte d'or</option>
-    <option value = "Milka">Milka</option>
-    <option value = "Kinder">Kinder</option>
-    <option value = "Lindt">Lindt</option>
-    <option value = "Ferrero">Ferreror</option>
-    <option value = "Nutella">Nutella</option>
-    <option value = "Suchard">Suchard</option>
-    <option value = "Nestlé">Nestlé</option>
-</select>
+    <!--select à remplacer par un appel dynamique de marque via l'API ?-->
+    <label for="brand-select">Choisir une marque :</label>
+    <select name="brand" id="brand-select">
+        <option value="Côte d'or">Côte d'or</option>
+        <option value="Milka">Milka</option>
+        <option value="Kinder">Kinder</option>
+        <option value="Lindt">Lindt</option>
+        <option value="Ferrero">Ferreror</option>
+        <option value="Nutella">Nutella</option>
+        <option value="Suchard">Suchard</option>
+        <option value="Nestlé">Nestlé</option>
+    </select>
 
 
-<label for="cat-select">Choisir une catégorie :</label>
-<select name="category" id="cat-select"></select>
+    <label for="cat-select">Choisir une catégorie :</label>
+    <select name="category" id="cat-select"></select>
 
+    <header>
+        <nav>
+            <a href="#"><img src="" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Journal de bord</a></li>
+            </ul>
+            <img src="" alt="" class="menu-icon">
+        </nav>
+    </header>
+
+    <section class="text">
+        <h1>Je suis <span class="auto-typing"></span></h1>
+        <p>Explications</p>
+        <a hreh="#">Me contacter</a> <a href="#" class="list">Listes</a>
+    </section>
+
+    <div class="overlay"></div>
+
+
+    <script src="main.js"></script>
+    <script src="select.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="library.js"></script>
 </body>
+
 </html>
