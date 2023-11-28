@@ -51,25 +51,25 @@ const listFiches = document.querySelector(".listFiches")
 		const article = response[i]
 
 		const fiche = document.createElement("div")
-		
+		listFiches.appendChild(fiche)
 
 		const productName = document.createElement("h2")
 		productName.textContent = article.product_name_fr
-
+		fiche.appendChild(productName)
 
 		const brand = document.createElement("h3")
 		brand.textContent = article.brands
+		fiche.appendChild(brand)
 
 		const nutriscoreTag = document.createElement("p")
 		nutriscoreTag.textContent = article.nutriscore_grade
+		fiche.appendChild(nutriscoreTag)
 
 		const nutriscoreViz = document.createElement("img")
 		const nutriscore = article.nutriscore_grade
 		nutriscoreViz.src = `img/nutri_${nutriscore}.png`
-
+		fiche.appendChild(nutriscoreViz)
 	}
-
-
 }
 
 const request = async () => {
