@@ -9,6 +9,10 @@ body {
     font-size: 14;
 }
 
+.listFiches {
+    color : white;
+}
+
 .overlay {
     position: absolute;
     top: 0;
