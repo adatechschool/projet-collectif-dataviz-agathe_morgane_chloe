@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du chocolat, mais healthy !</title>
     <script src="main.js" defer></script>
+    <script src="select.js" defer></script>
+
 </head>
 <body>
     <h1>Du chocolat mais healthy</h1>
-<!--select à remplacer par un appel dynamique de catégories via l'API-->
-    <label for="cat-select">Choisir une catégorie :</label>
-<select name="category" id="cat-select">
-    <option value = "Snacks">Snacks</option>
-    <option value= "Chocolats">Chocolats</option>
-    <option value = "Chocolat noir">Chocolat noir</option>
-    <option value = "Cacao et dérivés">Cacao et dérivés</option>
-</select>
-<!--select à remplacer par un appel dynamique de marque via l'API-->
+
+<!--select à remplacer par un appel dynamique de marque via l'API ?-->
 <label for="brand-select">Choisir une marque :</label>
-<select name="category" id="brand-select">
+<select name="brand" id="brand-select">
+    <option value = "Côte d'or">Côte d'or</option>
     <option value = "Milka">Milka</option>
-    <option value="Lindt">Lindt</option>
-    <option value = "Ferrero">Ferreror</option>
     <option value = "Kinder">Kinder</option>
+    <option value = "Lindt">Lindt</option>
+    <option value = "Ferrero">Ferreror</option>
+    <option value = "Nutella">Nutella</option>
+    <option value = "Suchard">Suchard</option>
+    <option value = "Nestlé">Nestlé</option>
 </select>
 
+
+<label for="cat-select">Choisir une catégorie :</label>
+<select name="category" id="cat-select"></select>
 
 </body>
 </html>
