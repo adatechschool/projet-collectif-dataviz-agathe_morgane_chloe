@@ -5,8 +5,26 @@
 }
 
 body {
-    font-family:'Tw Cen Mt';
-    font-size: 14;
+    font-family: Maiah, Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 30px;
+    background-color: transparent; /* Fond transparent */
+    border-radius: 0; /* Pas d'arrondi pour un bouton carré */
+    transition: background-color 0.3s, color 0.3s; /* Animation de transition */
+}
+
+.button:hover {
+    background-color: white;
+    color: #f32020;
 }
 
 .listFiches {
@@ -37,6 +55,7 @@ nav {
     align-items:center;
     width:100%;
     padding: 30px 0 10 px;
+    font-family: Warton, Arial, Helvetica, sans-serif;
 }
 
 nav .logo {
@@ -117,17 +136,43 @@ nav ul li a:hover {
     background-color: #095228;
     margin: 30px;
     flex: 1;
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Pour s'assurer que les éléments sont disposés en colonne */
+    align-items: center; /* Pour centrer les éléments horizontalement */
+    justify-content: flex-end; /* Pour aligner les éléments vers le bas */ 
 }
+
 
 .listFiches div img {
     max-width: 100%;
-    margin: auto;
-    align-self: bottom;
+    align-self: flex-end;
 }
 
-
-
-
+/* Style de base pour le sélecteur */
+select {
+    padding: 8px; /* Ajoutez un espace intérieur pour un meilleur aspect visuel */
+    font-size: 16px; /* Taille de la police du texte dans le sélecteur */
+    border: 1px solid #ccc; /* Bordure du sélecteur */
+    background-color: #fff; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+  }
+  
+  /* Style pour les options du sélecteur */
+  select option {
+    background-color: #fff; /* Couleur de fond des options */
+    color: #333; /* Couleur du texte des options */
+  }
+  
+  /* Style lorsque le sélecteur est survolé */
+  select:hover {
+    border-color: #666; /* Changement de couleur de la bordure au survol */
+  }
+  
+  /* Style lorsque le sélecteur est en focus */
+  select:focus {
+    outline: none; /* Supprime la bordure de focus par défaut */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre de focus */
+  }
+  
 
 

@@ -83,6 +83,8 @@ const request = async () => {
 	console.log("response = ", response)
 	console.log("response.product =", response.products)
 
+	deleteEmptyElement(response.products)
+
 	//Limiter à 5 réponses
 	const responseFive = response.products.slice(0, 5)
 	console.log("5 requêtes = ", responseFive)
@@ -90,4 +92,14 @@ const request = async () => {
 	affichage(responseFive)
 
 }
-// to do : gérer une image par défaut grâce à ??
+
+// Si une des catégorie est vide ou "unknown", supprime l'élément
+const deleteEmptyElement = (data) => {
+    for (let i=0; i<data.length; i++) {
+        const article = data[i]
+        if (article.brands === "" || article.nutriscore_grade === "" || article.nutriscore_grade === "unknown" || article.product_name_fr === "") {
+            data.splice(i, 1)
+        }
+    }
+    return data
+}

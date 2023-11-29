@@ -1,5 +1,5 @@
 let typed = new Typed('.auto-typing', {
-    strings: ['la magie de noël','healthy','du chocolat'],
+    strings: ['la magie de Noël','healthy','du chocolat'],
     typeSpeed:100,
     backSpeed:100,
     loop: true,
