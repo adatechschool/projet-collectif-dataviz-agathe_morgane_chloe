@@ -45,9 +45,14 @@ const getValueCat = () => {
 }
 
 const affichage = (response) => {
-const listFiches = document.querySelector(".listFiches")
+	// Reset de l'affichage précédent
+	const listFiches = document.querySelector(".listFiches")
+	while (listFiches.firstChild) {
+		listFiches.removeChild(listFiches.firstChild);
+	}
 
-	for (let i=0; i<response.length; i++) {
+	// Création des fiches
+	for (let i = 0; i < response.length; i++) {
 		const article = response[i]
 
 		const fiche = document.createElement("div")
@@ -60,10 +65,6 @@ const listFiches = document.querySelector(".listFiches")
 		const brand = document.createElement("h3")
 		brand.textContent = article.brands
 		fiche.appendChild(brand)
-
-		const nutriscoreTag = document.createElement("p")
-		nutriscoreTag.textContent = article.nutriscore_grade
-		fiche.appendChild(nutriscoreTag)
 
 		const nutriscoreViz = document.createElement("img")
 		const nutriscore = article.nutriscore_grade
@@ -79,7 +80,7 @@ const request = async () => {
 	const url = `https://world.openfoodfacts.net/api/v2/search?brands_tags=${valueBrand}&categories_tags=${valueCat}&countries_tags_en=france&fields=brands%2Cproduct_name_fr%2Cnutriscore_grade&sort_by=nutriscore_score`;
 	const datas = await fetch(url);
 	const response = await datas.json();
-	console.log("méga objet = ", response)
+	console.log("response = ", response)
 	console.log("response.product =", response.products)
 
 	//Limiter à 5 réponses

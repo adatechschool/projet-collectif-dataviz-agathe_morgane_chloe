@@ -108,7 +108,23 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
+.listFiches {
+    display : flex;
+    max-width: 100%;
+}
 
+.listFiches div {
+    background-color: #095228;
+    margin: 30px;
+    flex: 1;
+    justify-content: center;
+}
+
+.listFiches div img {
+    max-width: 100%;
+    margin: auto;
+    align-self: bottom;
+}
 
 
 
