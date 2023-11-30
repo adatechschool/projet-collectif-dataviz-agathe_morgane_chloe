@@ -25,12 +25,15 @@ Développer une application web permettant de visualiser des données de façon 
 * Notion
 * VSCode
 * Postman
+* Git / GitHub
 * Allow Cors
 * Cors Unblock
 
 ## Notre API
 URL : `https://world.openfoodfacts.net/api/v2/search?`  
-Documentation : `https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/`
+
+Documentation : `https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/` 
+
 Licence : Open Database License / Database Contents License (DbCL) v1.0
 
 
