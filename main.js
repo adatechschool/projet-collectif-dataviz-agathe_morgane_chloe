@@ -78,17 +78,18 @@ const request = async () => {
 	const valueCat = getValueCat();
 
 	const url = `https://world.openfoodfacts.net/api/v2/search?brands_tags=${valueBrand}&categories_tags=${valueCat}&countries_tags_en=france&fields=brands%2Cproduct_name_fr%2Cnutriscore_grade&sort_by=nutriscore_score`;
+	console.log("url = ", url)
 	const datas = await fetch(url);
-	console.log(datas);
+	console.log("datas = ", datas);
 	const response = await datas.json();
-	console.log("response = ", response)
-	console.log("response.product =", response.products)
+	// console.log("response = ", response)
+	// console.log("response.product =", response.products)
 
 	deleteEmptyElement(response.products)
 
 	//Limiter à 5 réponses
 	const responseFive = response.products.slice(0, 5)
-	console.log("5 requêtes = ", responseFive)
+	// console.log("5 requêtes = ", responseFive)
 
 	affichage(responseFive)
 
