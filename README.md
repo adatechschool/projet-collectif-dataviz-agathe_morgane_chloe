@@ -31,6 +31,8 @@ Développer une application web permettant de visualiser des données de façon 
 ## Notre API
 URL : `https://world.openfoodfacts.net/api/v2/search?`  
 Documentation : `https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/`
+Licence : Open Database License / Database Contents License (DbCL) v1.0
+
 
 ## Description
 - Annulation de notre idée initiale du “Test de Bechdel” : l’API que l’on voulait utiliser à la base ne renvoyait pas des données exploitables dans le cadre du projet imaginé. 
