@@ -1,4 +1,4 @@
-# Projet collectif Dataviz  
+# Projet collectif Dataviz  "Chocolate but healthy!"
 ### Morgane / Chloé / Agathe (MCA corp.)
 
 -----------------------------------------------------------------
