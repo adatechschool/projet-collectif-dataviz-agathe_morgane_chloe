@@ -9,33 +9,36 @@ Développer une application web permettant de visualiser des données de façon 
 
 ## Conditions 
 
-`* Langages utilisés : HTML - CSS - Javascript - JSON - MarkDown`
-`* Durée du projet : 2 semaines`
+* Langages utilisés : HTML - CSS - Javascript - JSON - MarkDown
+* Durée du projet : 2 semaines
 
 ## Objectifs pédagogiques
 
-`* Travailler notre organisation d'équipe  `
-`* Partager les tâches entre nous 3  `
-`* Découvrir et traiter les données en temps réel  `
-`* Explorer les possibilités du CSS  `
-`* Utiliser Git et Github  `
+* Travailler notre organisation d'équipe 
+* Partager les tâches entre nous 3 
+* Découvrir et traiter les données en temps réel 
+* Explorer les possibilités du CSS 
+* Utiliser Git et Github 
 
 ## Nos outils
-* Slack
-* Notion
+
+### Stack tech
 * VSCode
 * Postman
 * Git / GitHub
 * Allow Cors
 * Cors Unblock
 
-## Notre API
+### Coopération
+* Slack
+* Notion
+
+## L'API utilisée "Open Food Facts"
 URL : `https://world.openfoodfacts.net/api/v2/search?`  
 
 Documentation : `https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v2/` 
 
 Licence : Open Database License / Database Contents License (DbCL) v1.0
-
 
 ## Description
 - Annulation de notre idée initiale du “Test de Bechdel” : l’API que l’on voulait utiliser à la base ne renvoyait pas des données exploitables dans le cadre du projet imaginé. 
